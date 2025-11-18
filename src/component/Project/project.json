@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "name": "個人網站",
+        "para": "個人簡介網站, 包含各種個人資訊內容,Lorem ipsum dolor sit amet consecteturadipisicing elit. Eligendi in possimus maiores eos sequi. Iusto nostrum veritatisiste neque quibusdam explicabo cum! Numquam recusandae totam consequuntur adipisci?Ipsa, nisi repellendus.",
+        "lg": ["Html", "Css", "Js", "Ts", "Vue", "React"]
+    },
+
+    {
+        "id": 1,
+        "name": "咖啡廳網站",
+        "para": "咖啡廳的網站介紹, Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, iste nisi incidunt minus veniam, ab saepe reprehenderit recusandaequis consequatur, maiores illo enim temporibus! Cum, explicabo molestias.Laboriosam, laudantium quas?",
+        "lg": ["Html", "Css", "Js"]
+    },
+
+    {
+        "id": 2,
+        "name": "企業Guideline",
+        "para": "企業的標準手冊, Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, iste nisi incidunt minus veniam, ab saepe reprehenderit recusandaequis consequatur, maiores illo enim temporibus! Cum, explicabo molestias.Laboriosam, laudantium quas?",
+        "lg": ["Html", "Css", "Js"]
+    }
+]

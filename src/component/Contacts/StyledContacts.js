@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import { 
+    primaryColor,
+    darkerGreen,
+    primaryBgColor,
+    secondaryBgColor,
+ } from "../GuideLine";
+
 
 export const StyledMaskDark = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
@@ -19,7 +26,7 @@ export const StyledContacts = styled.div`
 `
 
 export const StyledTitle = styled.div`
-    color: #14b14d;
+    color: ${primaryColor};
 
     text-align: center;
     font-size: 40px;
@@ -31,7 +38,7 @@ export const StyledVS = styled.div`
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #14754d;
+    background-color: ${darkerGreen};
     margin-bottom: 20px;
 `
 
@@ -47,7 +54,7 @@ export const StyledLinkArea = styled.div`
 `
 
 export const StyledSubtitle = styled.div`
-    color: #14b14d;
+    color: ${primaryColor};
 
     text-align: center;
     font-size: 40px;
@@ -56,8 +63,8 @@ export const StyledSubtitle = styled.div`
 `
 
 export const StyledSocialLinks = styled.div`
-    background-color: #0f101a;
-    border: 2px solid #313131;
+    background-color: ${primaryBgColor};
+    border: 2px solid ${secondaryBgColor};
     padding: 20px;
     height: calc(100% - 86px);
     border-radius: 16px;
@@ -68,7 +75,7 @@ export const StyledSocialLink = styled.a`
     width: 100%;
     font-size: 24px;
     line-height: 32px;
-    background-color: #313131;
+    background-color: ${secondaryBgColor};
     border: 1px solid #2a2b3a;
 
     border-radius: 8px;
@@ -80,13 +87,13 @@ export const StyledSocialLink = styled.a`
     transition: all 0.2s;
 
     &:hover {
-        color: #14b14d;
+        color: ${primaryColor};
         transform: translateY(-4px);
     }
 `
 
 export const StyledSocialIcon = styled.div`
-    color: #14b14d;
+    color: ${primaryColor};
     position: absolute;
     top: 50%;
     left: 24px;
@@ -107,7 +114,7 @@ export const StyledSocialName = styled.div`
     transition: all 0.3s;
 
     &:hover {
-        color: #14b14d;
+        color: ${primaryColor};
     }
 
     @media screen and (max-width: 1200px) {
@@ -135,7 +142,7 @@ export const StyledFormArea = styled.div`
 `
 
 export const StyledFormSubtitle = styled.div`
-    color: #14b14d;
+    color: ${primaryColor};
 
     text-align: center;
     font-size: 40px;
@@ -148,11 +155,11 @@ export const StyledFormSubtitle = styled.div`
 
 export const StyledSendEmail = styled.div`
     width: 100%;
-    background-color: #0f101a;
+    background-color: ${primaryBgColor};
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-    border: 2px solid #313131;
+    border: 2px solid ${secondaryBgColor};
 
     box-shadow: 0 4px 16px rgba(49, 49, 49, 0.3);
 
@@ -161,7 +168,7 @@ export const StyledSendEmail = styled.div`
 export const StyledContactForm = styled.form`
     width: 100%;
     padding: 24px;
-    color: #14b14d;
+    color: ${primaryColor};
 `
 
 export const StyledFormTitle = styled.label`
@@ -171,7 +178,7 @@ export const StyledFormTitle = styled.label`
 `
 
 export const StyledFormItem = styled.input`
-    background-color: #313131;
+    background-color: ${secondaryBgColor};
     border: 1px solid #2a2b3a;
     border-radius: 6px;
     padding: 10px;
@@ -188,7 +195,7 @@ export const StyledFormPara = styled.div`
 `
 
 export const StyledFormMsg = styled.textarea`
-    background-color: #313131;
+    background-color: ${secondaryBgColor};
     border: 1px solid #2a2b3a;
     border-radius: 6px;
     padding: 10px;
@@ -207,9 +214,9 @@ export const StyledFormBtn = styled.button`
     padding: 4px 24px;
 
     font-size: 28px;
-    background-color: #0f101a;
-    color: #14b14d;
-    border: 2px solid #14b14d;
+    background-color: ${primaryBgColor};
+    color: ${primaryColor};
+    border: 2px solid ${primaryColor};
     border-radius: 8px;
     left: 50%;
     transform: translateX(-50%);
@@ -222,9 +229,9 @@ export const StyledFormBtn = styled.button`
     }
 
     &:hover {
-    background-color: #14b14d;
-    border: 2px solid #14b14d;
-    color: #0f101a;
+    background-color: ${primaryColor};
+    border: 2px solid ${primaryColor};
+    color: ${primaryBgColor};
     }
 `
 

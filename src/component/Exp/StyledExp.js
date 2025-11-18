@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { 
     primaryColor,
+    paraColor,
+    darkerGreen,
     primaryBgColor,
-    secondaryColor
+    secondaryBgColor,
  } from "../GuideLine";
 
 export const StyledMaskDark = styled.div`
@@ -18,7 +20,7 @@ export const StyledExp = styled.div`
   min-height: calc(100vh - 160px);
   color: ${primaryColor};
   .col {
-    border-right: 2px solid #14754d;
+    border-right: 2px solid ${darkerGreen};
   }
   @media (max-width: 500px) {
   .col-se {
@@ -39,7 +41,7 @@ export const StyledVS = styled.div`
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #14754d;
+  background-color: ${darkerGreen};
   margin-bottom: 20px;
 `
 
@@ -51,7 +53,7 @@ export const StyledTimeDot = styled.div`
   display: block;
   width: 20px;
   height: 20px;
-  background: #14754d;
+  background-color: ${darkerGreen};
   border-radius: 50%;
 
   position: absolute;
@@ -72,7 +74,6 @@ export const StyledTime = styled.div`
   }
   @media (max-width: 575px) {
     font-size: 24px;
-    /* text-align: center; */
 
     
   }
@@ -120,7 +121,7 @@ export const StyledExpPara = styled.div`
   margin-left: 20px;
   line-height: 24px;
   margin-bottom: 40px;
-  color: rgb(192, 187, 187);
+  color: ${paraColor};
 
   @media (max-width: 575px) {
     font-size: 14px;
@@ -131,7 +132,7 @@ export const StyledCard = styled.div`
   color: ${primaryColor};
   padding: 8px;
   background-color: ${primaryBgColor};
-  border: 2px solid #313131;
+  border: 2px solid ${secondaryBgColor};
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(49, 49, 49, 0.3);
   user-select: none;
@@ -205,7 +206,7 @@ export const StyledMoreProjectsBtn = styled.div`
   padding: 8px 20px;
   background-color: ${primaryBgColor};
   color: ${primaryColor};
-  border: 2px solid #313131;
+  border: 2px solid ${secondaryBgColor};
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(49, 49, 49, 0.3);
