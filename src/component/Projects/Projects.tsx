@@ -22,6 +22,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import projectData from "../Project/project.json"
 
 
+type lgName = 'Html' | 'Css' | 'Js' | 'Ts' | 'Vue' | 'React';
 
 const tagMap = {
     Html: <StyledTagHtml />,
@@ -31,6 +32,16 @@ const tagMap = {
     Vue: <StyledTagVue />,
     React: <StyledTagReact />
 };
+
+interface ProjectData {
+    id: number;
+    name: string;
+    para: string;
+    lg: lgName[]; // 使用明確的 TechName 陣列
+}
+
+const data: ProjectData[] = projectData as ProjectData[]; 
+
 
 function Projects() {
 
@@ -42,7 +53,7 @@ function Projects() {
                         <StyledTitle>作品集</StyledTitle>
                         <StyledVS />
                         <Row>
-                            {projectData.map(project => (
+                            {data.map(project => (
                                 <Col lg={3} md={4} sm={6} className="col-se mb-4" key={project.id}>
                                     <StyledCard href='#!'>
                                         <StyledProjectName>{project.name}</StyledProjectName>
@@ -58,7 +69,7 @@ function Projects() {
                                     </StyledCard>
                                 </Col>
                             ))}
-                            {projectData.map(project => (
+                            {data.map(project => (
                                 <Col lg={3} md={4} sm={6} className="col-se mb-4" key={project.id}>
                                     <StyledCard href='#!'>
                                         <StyledProjectName>{project.name}</StyledProjectName>

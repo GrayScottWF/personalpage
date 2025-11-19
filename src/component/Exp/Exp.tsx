@@ -99,8 +99,6 @@ function Exp() {
                                 </StyledCardInfo>
                             </StyledCard>
                         </Col>
-                        {/* </div> */}
-                        {/* <div className="col-lg-3 col-sm-6 col-xs-6 col-se"> */}
                         <Col xs={6} lg={3} className='col-se'>
                             <StyledCard>
                                 <StyledImgContainer>
@@ -112,8 +110,6 @@ function Exp() {
                                 </StyledCardInfo>
                             </StyledCard>
                         </Col>
-                        {/* </div> */}
-                        {/* <div className="col-lg-3 col-sm-6 col-xs-6 col-se"> */}
                         <Col xs={6} lg={3} className='col-se'>
                             <StyledCard>
                                 <StyledImgContainer>
@@ -125,8 +121,6 @@ function Exp() {
                                 </StyledCardInfo>
                             </StyledCard>
                         </Col>
-                        {/* </div> */}
-                        {/* <div className="col-lg-3 col-sm-6 col-xs-6 col-se"> */}
                         <Col xs={6} lg={3} className='col-se'>
                             <StyledCard>
                                 <StyledImgContainer>
@@ -138,7 +132,6 @@ function Exp() {
                                 </StyledCardInfo>
                             </StyledCard>
                         </Col>
-                        {/* </div> */}
                     </Row>
                     <StyledProjectsBtns>
                         <Link to={'/projects'}>

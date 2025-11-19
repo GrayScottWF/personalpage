@@ -104,20 +104,20 @@ function Contact() {
                                     <StyledContactForm id="contactform">
                                         <Row>
                                             <Col lg={6} md={12}>
-                                                <StyledFormTitle for="name" className="form-name form-title">姓名</StyledFormTitle>
+                                                <StyledFormTitle className="form-name form-title">姓名</StyledFormTitle>
                                                 <StyledFormItem type="text" id="name" name="name" required />
                                             </Col>
                                             <Col lg={6} md={12}>
-                                                <StyledFormTitle for="email" className="form-email form-title">信箱</StyledFormTitle>
+                                                <StyledFormTitle className="form-email form-title">信箱</StyledFormTitle>
                                                 <StyledFormItem type="email" id="email" name="email" required />
                                             </Col>
                                         </Row>
 
-                                        <StyledFormTitle for="message">留言</StyledFormTitle>
+                                        <StyledFormTitle>留言</StyledFormTitle>
                                         <StyledFormMsg
                                             id="message"
                                             name="message"
-                                            rows="6"
+                                            rows={6}
                                             required
                                         ></StyledFormMsg>
 
