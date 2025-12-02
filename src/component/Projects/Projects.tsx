@@ -37,7 +37,8 @@ interface ProjectData {
     id: number;
     name: string;
     para: string;
-    lg: lgName[]; // 使用明確的 TechName 陣列
+    lg: lgName[];
+    url: string;
 }
 
 const data: ProjectData[] = projectData as ProjectData[]; 
@@ -55,23 +56,7 @@ function Projects() {
                         <Row>
                             {data.map(project => (
                                 <Col lg={3} md={4} sm={6} className="col-se mb-4" key={project.id}>
-                                    <StyledCard href='#!'>
-                                        <StyledProjectName>{project.name}</StyledProjectName>
-                                        <StyledProjectPara>{project.para}</StyledProjectPara>
-
-                                        <StyledLgTag>
-                                            {project.lg.map((lgName, index) => (
-                                                <React.Fragment key={index}>
-                                                    {tagMap[lgName]}
-                                                </React.Fragment>
-                                            ))}
-                                        </StyledLgTag>
-                                    </StyledCard>
-                                </Col>
-                            ))}
-                            {data.map(project => (
-                                <Col lg={3} md={4} sm={6} className="col-se mb-4" key={project.id}>
-                                    <StyledCard href='#!'>
+                                    <StyledCard href={project.url}>
                                         <StyledProjectName>{project.name}</StyledProjectName>
                                         <StyledProjectPara>{project.para}</StyledProjectPara>
 

@@ -2,21 +2,35 @@
     {
         "id": 0,
         "name": "個人網站",
-        "para": "個人簡介網站, 包含各種個人資訊內容,Lorem ipsum dolor sit amet consecteturadipisicing elit. Eligendi in possimus maiores eos sequi. Iusto nostrum veritatisiste neque quibusdam explicabo cum! Numquam recusandae totam consequuntur adipisci?Ipsa, nisi repellendus.",
-        "lg": ["Html", "Css", "Js", "Ts", "Vue", "React"]
+        "para": "個人簡介網站, 包含工作經歷、過往專案、聯絡資訊等內容",
+        "lg": ["Html", "Css", "Js", "Ts", "Vue", "React"],
+        "url": "https://github.com/GrayScottWF/personalpage",
+        "img": "/images/pv/personalPagePv.png"
     },
 
     {
         "id": 1,
         "name": "咖啡廳網站",
-        "para": "咖啡廳的網站介紹, Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, iste nisi incidunt minus veniam, ab saepe reprehenderit recusandaequis consequatur, maiores illo enim temporibus! Cum, explicabo molestias.Laboriosam, laudantium quas?",
-        "lg": ["Html", "Css", "Js"]
+        "para": "咖啡廳的網站介紹, 內容包含公司文化、菜單、商品資訊、聯絡方式等資訊",
+        "lg": ["Html", "Css", "Js"],
+        "url": "https://github.com/GrayScottWF/GuideLine-example",
+        "img": "/images/pv/coffee001.png"
     },
 
     {
         "id": 2,
-        "name": "企業Guideline",
-        "para": "企業的標準手冊, Lorem ipsum dolor sit amet consectetur adipisicing elit.Consequuntur, iste nisi incidunt minus veniam, ab saepe reprehenderit recusandaequis consequatur, maiores illo enim temporibus! Cum, explicabo molestias.Laboriosam, laudantium quas?",
-        "lg": ["Html", "Css", "Js"]
+        "name": "企業標準化手冊練習",
+        "para": "企業的標準化手冊，包含色票、字體、排版等相關規範資訊",
+        "lg": ["Html", "Css", "Js"],
+        "url": "https://github.com/GrayScottWF/Coffee-RWD",
+        "img": "/images/pv/GuideLine.png"
+    },
+    {
+        "id": 3,
+        "name": "Animation練習-IG",
+        "para": "以CSS原生Animation製作IG的LOGO微動畫練習",
+        "lg": ["Html", "Css", "Js"],
+        "url": "https://github.com/GrayScottWF/animation-practice---IG-Logo",
+        "img": "/images/pv/animationPv.png"
     }
 ]

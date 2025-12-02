@@ -19,9 +19,12 @@ import {
     StyledInfo2,
 } from './StyledHome'
 import { Row, Col, Container } from 'react-bootstrap';
+import projectData from "../Project/project.json"
+interface ProjectData {
+    name: string;
+}
 
-
-
+const data: ProjectData[] = projectData.slice(0,4) as ProjectData[]; 
 function Home() {
     return(
         <StyledHomePage>
@@ -48,20 +51,22 @@ function Home() {
                                     <StyledInfoTitle>近期完成專案</StyledInfoTitle>
                                     <StyledInfoVS />
                                     <StyledInfoParas>
+                                        {data.map(project => (
+                                             <li className="info-para">{project.name}</li>
+                                        ))}
+                                        {/* <li className="info-para">個人網站</li>
                                         <li className="info-para">企業Guideline</li>
-                                        <li className="info-para">咖啡廳官方網站</li>
-                                        <li className="info-para">***</li>
-                                        <li className="info-para">***</li>
+                                        <li className="info-para">咖啡廳官方網站</li> */}
                                     </StyledInfoParas>
                                 </StyledInfo1>
                                 <StyledInfo2>
                                     <StyledInfoTitle>擅長工具</StyledInfoTitle>
                                     <StyledInfoVS />
                                     <StyledInfoParas>
-                                        <li className="info-para">Html</li>
-                                        <li className="info-para">Jquery</li>
                                         <li className="info-para">Vue</li>
                                         <li className="info-para">React</li>
+                                        <li className="info-para">Html</li>
+                                        <li className="info-para">Jquery</li>
                                     </StyledInfoParas>
                                 </StyledInfo2>
                             </StyledHomeInfo>

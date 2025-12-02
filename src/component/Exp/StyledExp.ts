@@ -128,7 +128,8 @@ export const StyledExpPara = styled.div`
   }
 `
 
-export const StyledCard = styled.div`
+export const StyledCard = styled.a`
+  display:block;
   color: ${primaryColor};
   padding: 8px;
   background-color: ${primaryBgColor};
@@ -179,14 +180,14 @@ export const StyledCardTitle = styled.div`
   font-weight: 600;
   line-height: 40px;
   margin-top: 8px;
-
+  color: ${primaryColor};
   margin-bottom: 8px;
 `
 
 export const StyledCardInfo = styled.div`
   font-size: 20px;
   line-height: 24px;
-  color: rgb(192, 187, 187);
+  color: ${paraColor};
   height: 74px;
   overflow: hidden;
   margin-bottom: 12px;

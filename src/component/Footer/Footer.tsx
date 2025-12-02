@@ -21,7 +21,7 @@ function Footer() {
                 <StyledFooterItem>
                     <StyledCr>© 2025 by Gray Scott</StyledCr>
                     <StyledSocialBtns>
-                        <StyledSocialItem href='#!'>
+                        {/* <StyledSocialItem href='#!'>
                             <StyledSocialBtn>
                                 <FontAwesomeIcon className='social-btn' icon={faInstagram} />
                             </StyledSocialBtn>
@@ -30,13 +30,13 @@ function Footer() {
                             <StyledSocialBtn>
                                 <FontAwesomeIcon className='social-btn' icon={faXTwitter} />
                             </StyledSocialBtn>
-                        </StyledSocialItem>
-                        <StyledSocialItem href='#!'>
+                        </StyledSocialItem> */}
+                        <StyledSocialItem href='https://www.linkedin.com/in/%E4%BD%90%E5%9C%BB-%E5%BC%B5-94b349398/'>
                             <StyledSocialBtn>
                                 <FontAwesomeIcon className='social-btn' icon={faLinkedin} />
                             </StyledSocialBtn>
                         </StyledSocialItem>
-                        <StyledSocialItem href='#!'>
+                        <StyledSocialItem href='https://github.com/GrayScottWF'>
                             <StyledSocialBtn>
                                 <FontAwesomeIcon className='social-btn' icon={faGithub} />
                             </StyledSocialBtn>
