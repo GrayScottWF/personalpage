@@ -13,7 +13,7 @@
         "name": "咖啡廳網站",
         "para": "咖啡廳的網站介紹, 內容包含公司文化、菜單、商品資訊、聯絡方式等資訊",
         "lg": ["Html", "Css", "Js"],
-        "url": "https://github.com/GrayScottWF/GuideLine-example",
+        "url": "https://github.com/GrayScottWF/Coffee-RWD",
         "img": "/images/pv/coffee001.png"
     },
 
@@ -22,7 +22,7 @@
         "name": "企業標準化手冊練習",
         "para": "企業的標準化手冊，包含色票、字體、排版等相關規範資訊",
         "lg": ["Html", "Css", "Js"],
-        "url": "https://github.com/GrayScottWF/Coffee-RWD",
+        "url": "https://github.com/GrayScottWF/GuideLine-example",
         "img": "/images/pv/GuideLine.png"
     },
     {

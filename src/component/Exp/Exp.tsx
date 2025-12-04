@@ -19,7 +19,6 @@ import {
     StyledMoreProjectsBtn,
 
 } from './StyledExp'
-import ImgPv from '../images/imgData'
 import { Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import projectData from '../Project/project.json'
