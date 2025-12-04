@@ -1,4 +1,13 @@
 import styled from "styled-components";
+import { 
+    primaryColor,
+    paraColor,
+    darkerGreen,
+    primaryBgColor,
+    secondaryBgColor,
+    tagColor,
+ } from "../GuideLine";
+
 
 export const StyledMaskDark = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
@@ -21,7 +30,7 @@ export const StyledProjects = styled.div`
   }
 `
 export const StyledTitle = styled.div`
-  color: #14b14d;
+  color: ${primaryColor};
   text-align: center;
   font-size: 40px;
   padding-top: 20px;
@@ -32,21 +41,21 @@ export const StyledVS = styled.div`
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #14754d;
+  background-color: ${darkerGreen};
   margin-bottom: 20px;
 `
 
 export const StyledCard = styled.a`
   display: block;
   text-align: center;
-  color: #14b14d;
+  color: ${primaryColor};
   padding: 16px;
   /* min-height: 400px; */
   height: 100%;
   margin-bottom: 20px;
 
-  border: 4px solid #313131;
-  background-color: #0f101a;
+  border: 4px solid ${secondaryBgColor};
+  background-color: ${primaryBgColor};
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(15, 16, 26, 0.8);
 
@@ -83,7 +92,7 @@ export const StyledProjectPara = styled.div`
   line-height: 24px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: rgb(192, 187, 187);
+  color: ${paraColor};
 
   max-height: 144px;
 
@@ -118,7 +127,7 @@ export const StyledTagHtml = styled.div`
   display: inline-block;
   vertical-align: top;
   background-color: green;
-  color: #fff;
+  color: ${tagColor};
   padding: 2px 4px;
   font-size: 12px;
   font-weight: 600;
@@ -136,8 +145,8 @@ export const StyledTagHtml = styled.div`
 export const StyledTagCss = styled.div`
   display: inline-block;
   vertical-align: top;
-  background-color: skyblue;
-  color: #fff;
+  background-color: #4d8fbf;
+  color: ${tagColor};
   padding: 2px 4px;
   font-size: 12px;
   font-weight: 600;
@@ -155,7 +164,7 @@ export const StyledTagJs = styled.div`
   display: inline-block;
   vertical-align: top;
   background-color: chocolate;
-  color: #fff;
+  color: ${tagColor};
   padding: 2px 4px;
   font-size: 12px;
   font-weight: 600;
@@ -173,7 +182,7 @@ export const StyledTagTs = styled.div`
   display: inline-block;
   vertical-align: top;
   background-color: blue;
-  color: #fff;
+  color: ${tagColor};
   padding: 2px 4px;
   font-size: 12px;
   font-weight: 600;
@@ -190,8 +199,8 @@ export const StyledTagTs = styled.div`
 export const StyledTagVue = styled.div`
   display: inline-block;
   vertical-align: top;
-  background-color: rgb(111, 202, 111);
-  color: #fff;
+  background-color: rgba(88, 156, 88, 1);
+  color: ${tagColor};
   padding: 2px 4px;
   font-size: 12px;
   font-weight: 600;
@@ -201,6 +210,23 @@ export const StyledTagVue = styled.div`
   
   &:before{
     content: 'Vue.js';
+  }
+`
+
+export const StyledTagReact = styled.div`
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgba(95, 104, 109, 1);
+  color: ${tagColor};
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  
+  &:before{
+    content: 'React';
   }
 `
 

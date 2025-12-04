@@ -74,6 +74,7 @@ export const StyledNavItem = styled.li`
   @media screen and (max-width: 768px) {
     text-align: center;
     margin-bottom: 32px;
+    padding: 0;
   }
 `
 
@@ -104,7 +105,7 @@ export const StyledNavToggle = styled.div`
     z-index: 600;
 
     @media screen and (max-width: 768px) {
-      display: inline-block;
+      display: block;
     }
 
     span {

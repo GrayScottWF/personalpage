@@ -48,9 +48,6 @@ function NavBar() {
                     <StyledNavLink>聯絡方式</StyledNavLink>
                   </Link>
                 </StyledNavItem>
-              {/* </ul> */}
-              
-            {/* </div> */}
             </StyledNavItems>
             <StyledNavToggle  className={navToggle ? 'active':''} onClick={() => {setNavToggle(!navToggle)}}>
                 <span></span>

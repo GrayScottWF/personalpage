@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     StyledMaskDark,
     StyledContacts,
@@ -23,12 +23,33 @@ import { faInstagram, faXTwitter, faLinkedin, faGithub, faDiscord, } from '@fort
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Row, Col, Container } from 'react-bootstrap';
-
+import Copytool from '../Copytool'
 
 
 
 
 function Contact() {
+    const textToCopy = "ws921208s@gmail.com";
+    const [isCopied, setIsCopied] = useState(false);
+
+    // 處理點擊事件的函數
+    const handleCopyClick = async () => {
+        try {
+        // 使用 Clipboard API 進行複製
+        await navigator.clipboard.writeText(textToCopy);
+        
+        // 設置狀態為已複製，並在短時間後恢復
+        setIsCopied(true);
+        setTimeout(() => {
+            setIsCopied(false);
+        }, 2000); // 2 秒後訊息消失
+
+        } catch (err) {
+        console.error('複製失敗: ', err);
+        alert('複製失敗');
+        }
+    };
+
     return(
         <StyledContacts>
             <StyledMaskDark />
@@ -41,25 +62,23 @@ function Contact() {
                                 <StyledSubtitle>個人帳號</StyledSubtitle>
                                 <StyledSocialLinks>
                                     <Row>
-                                        <Col>
-                                            <StyledSocialLink href="#!">
+                                        <Col sm={6}>
+                                            <StyledSocialLink onClick={handleCopyClick} href="#!">
                                                 <StyledSocialIcon>
                                                     <FontAwesomeIcon icon={faEnvelope} />
                                                 </StyledSocialIcon>
-                                                <StyledSocialName>Email</StyledSocialName>
+                                                <StyledSocialName>{isCopied ? '已複製信箱' : 'G-mail'}</StyledSocialName>
                                             </StyledSocialLink>
                                         </Col>
-                                        <Col>
-                                            <StyledSocialLink href="#!">
+                                        <Col sm={6}>
+                                            <StyledSocialLink href="https://github.com/GrayScottWF">
                                                 <StyledSocialIcon>
                                                     <FontAwesomeIcon icon={faGithub}  />
                                                 </StyledSocialIcon>
                                                 <StyledSocialName>Github</StyledSocialName>
                                             </StyledSocialLink>
                                         </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
+                                        <Col sm={6}>
                                         <StyledSocialLink href="#!">
                                             <StyledSocialIcon>
                                                 <FontAwesomeIcon icon={faInstagram}  />
@@ -67,7 +86,7 @@ function Contact() {
                                             <StyledSocialName>Instagram</StyledSocialName>
                                         </StyledSocialLink>
                                         </Col>
-                                        <Col>
+                                        <Col sm={6}>
                                         <StyledSocialLink href="#!">
                                             <StyledSocialIcon>
                                                 <FontAwesomeIcon icon={faXTwitter}  />
@@ -75,17 +94,15 @@ function Contact() {
                                             <StyledSocialName>Twitter</StyledSocialName>
                                         </StyledSocialLink>
                                         </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                        <StyledSocialLink href="#!">
+                                        <Col sm={6}>
+                                        <StyledSocialLink href="https://www.linkedin.com/in/%E4%BD%90%E5%9C%BB-%E5%BC%B5-94b349398/">
                                             <StyledSocialIcon>
                                                 <FontAwesomeIcon icon={faLinkedin}  />
                                             </StyledSocialIcon>
                                             <StyledSocialName>Linkedin</StyledSocialName>
                                         </StyledSocialLink>
                                         </Col>
-                                        <Col>
+                                        <Col sm={6}>
                                         <StyledSocialLink href="#!">
                                             <StyledSocialIcon>
                                                 <FontAwesomeIcon icon={faDiscord}  />
@@ -104,20 +121,20 @@ function Contact() {
                                     <StyledContactForm id="contactform">
                                         <Row>
                                             <Col lg={6} md={12}>
-                                                <StyledFormTitle for="name" className="form-name form-title">姓名</StyledFormTitle>
+                                                <StyledFormTitle className="form-name form-title">姓名</StyledFormTitle>
                                                 <StyledFormItem type="text" id="name" name="name" required />
                                             </Col>
                                             <Col lg={6} md={12}>
-                                                <StyledFormTitle for="email" className="form-email form-title">信箱</StyledFormTitle>
+                                                <StyledFormTitle className="form-email form-title">信箱</StyledFormTitle>
                                                 <StyledFormItem type="email" id="email" name="email" required />
                                             </Col>
                                         </Row>
 
-                                        <StyledFormTitle for="message">留言</StyledFormTitle>
+                                        <StyledFormTitle>留言</StyledFormTitle>
                                         <StyledFormMsg
                                             id="message"
                                             name="message"
-                                            rows="6"
+                                            rows={6}
                                             required
                                         ></StyledFormMsg>
 
